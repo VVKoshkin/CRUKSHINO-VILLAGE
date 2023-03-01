@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
         <a href="https://t.me/s/FigmaToHTML" target="_blank">
@@ -15,18 +20,529 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <header>
+            <div class="bgi">
+                <div class="bgi-color"></div>
+            </div>
+            <div class="container">
+                <navbar class="navbar">
+                    <nav class="navbar-logo"><a href="/">CRUKSHINO VILLAGE</a></nav>
+                    <nav class="navbar-socnets">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/vk.png" alt="VK"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/fb.png" alt="FB"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/ok.png" alt="OK"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/whatsapp.png" alt="WhatsApp"></a></li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar-texts">
+                        <p>Есть вопросы? <span>Звоните!</span></p>
+                        <a href="tel:+79252119123">+7 (925) 211-91-23</a>
+                        <p class="pseudo-green-circle">Время работы: с 8 до 20</p>
+                    </nav>
+                </navbar>
+                <div class="header-main">
+                    <h1 class="headline">
+                        <span class="headline-gradient">СВОЙ ДОМ В МОСКВЕ!</span>
+                        <span class="headline-smaller">В КРЁКШИНО ВИЛЛАДЖ</span> <span class="headline-price">От 10 000 000 рублей!</span></h1>
+                    <p class="typeset">От 10 000 000 рублей!</p>
+                </div>
+                <button class="btn"><img src="img/cottage-ico.png" alt="cottage">Выбирайте свой коттедж</button>
+                <div class="header-3D">
+                    <button class="btn"><img src="img/deg360ico.png" alt="deg360"></button>
+                    <p>Посмотрите<br>
+                        свой участок<br>
+                        в 3D - проекте</p>
+                    <a href="#">Посмотреть</a>
+                </div>
+            </div>
+            <div class="personal-offer">
+                <div class="container">
+                    <div>
+                        <h4>Персональное предложение<br>именно для Вас!</h4>
+                        <p>Введите свой номер телефона, и мы перезвоним Вам в течение 15 минут для консультации:
+                            Уточним у Вас все параметры Ваших предпочтений и предложим Вам лучший вариант!</p>
+                    </div>
+                    <form action="#">
+                        <input type="tel" name="phone" id="" placeholder="Введите номер телефона">
+                        <button type="submit" class="btn"><img src="img/offer-ico.svg" alt="submit">Получить
+                            предложение</button>
+                        <p>Нажимая на кнопку, вы соглашаетесь с правилами <a href="#">обработки персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages-content">
+                        <div>
+                            <h4 class="headline">Преимущества<span>вашего нового дома в Москве</span></h4>
+                            <p class="typeset">КП «Крёкшино Вилладж» спроектирован в ультрамодном европейском
+                                архитектурном стиле.</p>
+                            <p class="typeset">И это, подчёркивает его индивидуальность. Каждый дом, гармонично
+                                вливается, в единое целое коттеджного посёлка.</p>
+                        </div>
+                        <img src="img/advantages-image.jpg" alt="adv-image">
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <p class="card-number">01</p>
+                            <img src="img/cards-images/1.png" alt="adv01" class="circle-bottom circle-right">
+                            <p class="card-desc">Ипотека от 6%</p>
+                        </div>
+                        <div class="card">
+                            <p class="card-number">02</p>
+                            <img src="img/cards-images/2.png" alt="adv02" class="circle-top circle-right">
+                            <p class="card-desc">Первый взнос: 10%</p>
+                        </div>
+                        <div class="card">
+                            <p class="card-number">03</p>
+                            <img src="img/cards-images/3.png" alt="adv03" class="circle-bottom circle-left">
+                            <p class="card-desc">Навес для 2-х машин</p>
+                        </div>
+                        <div class="card">
+                            <p class="card-number">04</p>
+                            <img src="img/cards-images/4.png" alt="adv04" class="circle-top circle-left">
+                            <p class="card-desc">Московская прописка</p>
+                        </div>
+                        <!-- TODO итд -->
+                        <div class="card wide">
+                            <p class="card-number">13</p>
+                            <img src="img/cards-images/13.png" alt="adv13" class="circle-top circle-left">
+                            <p class="card-desc">Стены вашего дома сделаны из экологического керамического
+                                блока</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="porotherm">
+                <div class="container">
+                    <h4 class="headline">Стены сделаны<span>из Porotherm</span></h4>
+                    <div class="porotherm-cards">
+                        <div class="porotherm-card">
+                            <img src="img/porotherm.png" alt="porotherm">
+                            <div>
+                                <h4>Тепло</h4>
+                                <p>Самыми эффективным и экологически чистым материалом на сегодняшний день являются
+                                    керамический блок «Pororherm»</p>
+                            </div>
+                        </div>
+                        <div class="porotherm-card">
+                            <div>
+                                <h4>Качество жизни</h4>
+                                <p>Вы будите жить в доме построенного из самого дорогого, экологически чистого материала
+                                    - керамических блоков компании
+                                    «Parotherm».
+                                    Ваш дом облицован эксклюзивным лицевым кирпичём ручной фармовки, сделанный по
+                                    старинной датской технологии. Каждый
+                                    кирпич не повторим и имеет свою фактуру.</p>
+                            </div>
+                            <img src="img/factors.jpg" alt="factors">
+                        </div>
+                        <div class="porotherm-card">
+                            <img src="img/safety-image.jpg" alt="safety">
+                            <div>
+                                <h4>Безопасность</h4>
+                                <p>Керамические стены наиболее безопасны для жизни и здоровья человека. Так, обожженная
+                                    глина рН-нейтральна, что
+                                    предотвращает воздействие на нее химических веществ из окружающей среды. Керамика
+                                    обладает повышенной огнестойкостью,
+                                    поскольку в процессе производства проходит обжиг при температуре около 900 °C.</p>
+                            </div>
+                        </div>
+                        <!-- ИТД TODO -->
+                    </div>
+                </div>
+            </section>
+            <section class="territory">
+                <div class="territory-bgi">
+                    <div class="cover"></div>
+                </div>
+                <div class="container">
+                    <div class="territory-cards">
+                        <div class="territory-card">
+                            <div>
+                                <h4 class="headline"><span>Территория</span></h4>
+                                <p class="typeset">«КП «Крёкшино Вилладж» является закрытой охраняемой территорией.
+                                    Посёлок граничит с живописными чистыми прудами. Крёкшино было излюбленным местом
+                                    посещений
+                                    Л.Н. Толстого»</p>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                            <div class="pictures">
+                                <img class="active" src="img/territyty-image.jpg" alt="">
+                                <!-- <img src="img/offer-image.jpg" alt="">
+                                <img src="img/white-box-image.jpg" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="territory-card">
+                            <div class="pictures">
+                                <img class="active" src="img/territyty-image.jpg" alt="">
+                                <!-- <img src="img/offer-image.jpg" alt="">
+                                                            <img src="img/white-box-image.jpg" alt=""> -->
+                            </div>
+                            <div>
+                                <h4 class="headline"><span>Транспортная доступность</span></h4>
+                                <p class="typeset">Очень удобная транспортная доступность до Крёкшино, обеспечивается
+                                    наличием Минского скоростного шоссе, Киевского
+                                    скоростного шоссе, а также наличием электрички - ж/д станция Крёкшино находится в 15
+                                    минутах ходьбы. Школы, детские
+                                    сады, продуктовые магазины, рынки, рестораны находится в непосредственной близости.
+                                </p>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="houses">
+                <div class="container">
+                    <h4 class="headline">Дома с участками</h4>
+                    <div class="cards">
+                        <div class="card">
+                            <p class="card-number">01</p>
+                            <img src="img/houses-cards-images/1.svg" alt="house1" class="circle-top circle-left">
+                            <p class="card-desc">Предлагаются двухэтажные коттеджи, площадью 126, 135, 120, 131 м2, в
+                                едином стиле английского модерна.</p>
+                        </div>
+                        <div class="card">
+                            <p class="card-number">02</p>
+                            <img src="img/houses-cards-images/2.svg" alt="house1" class="circle-top circle-left">
+                            <p class="card-desc">Земельные участок, в собственности у каждого владельца дома.</p>
+                        </div>
+                        <div class="card">
+                            <p class="card-number">03</p>
+                            <img src="img/houses-cards-images/3.svg" alt="house2" class="circle-bottom circle-right">
+                            <p class="card-desc">Подведены и подключены все коммуникации: вода, канализация,
+                                электричество, отопление.</p>
+                        </div>
+                    </div>
+                    <div class="picture-collection">
+                        <div class="row">
+                            <p>Коттедж с отделкой 126 кв.м.<span>1 400 999 ₽</span></p>
+                            <img src="img/cottages/1-1.jpg" alt="" class="colspan-2 rowspan-2">
+                            <img src="img/cottages/1-2.jpg" alt="" class="colspan-2 rowspan-1">
+                            <img src="img/cottages/1-3.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/cottages/1-4.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                        <div class="row">
+                            <p>Коттедж с отделкой 135 кв.м.<span>1 400 999 ₽</span></p>
+                            <img src="img/cottages/2-1.jpg" alt="" class="colspan-2 rowspan-2">
+                            <img src="img/cottages/2-2.jpg" alt="" class="colspan-2 rowspan-1">
+                            <img src="img/cottages/2-3.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/cottages/2-4.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                        <div class="row">
+                            <p>Коттедж с отделкой 120 кв.м.<span>1 400 999 ₽</span></p>
+                            <img src="img/cottages/3-1.jpg" alt="" class="colspan-2 rowspan-2">
+                            <img src="img/cottages/3-2.jpg" alt="" class="colspan-2 rowspan-1">
+                            <img src="img/cottages/3-3.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/cottages/3-4.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                        <div class="row">
+                            <p>Коттедж с отделкой 131 кв.м.<span>1 400 999 ₽</span></p>
+                            <img src="img/cottages/4-1.jpg" alt="" class="colspan-2 rowspan-2">
+                            <img src="img/cottages/4-2.jpg" alt="" class="colspan-2 rowspan-1">
+                            <img src="img/cottages/4-3.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/cottages/4-4.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="displacement">
+                <img src="img/map.jpg" alt="map">
+                <div class="container">
+                    <h4 class="headline"><span>Расположение</span></h4>
+                </div>
+            </section>
+            <section class="settlement-photo">
+                <div class="container">
+                    <h4 class="headline">Фото посёлка</h4>
+                    <div class="picture-collection">
+                        <div class="row">
+                            <img src="img/settlement-photos/1.jpg" alt="" class="colspan-2 rowspan-1">
+                            <img src="img/settlement-photos/2.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                        <div class="row">
+                            <img src="img/settlement-photos/3.jpg" alt="" class="colspan-1 rowspan-2">
+                            <img src="img/settlement-photos/4.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/settlement-photos/5.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
+                        <div class="row">
+                            <img src="img/settlement-photos/6.jpg" alt="" class="colspan-2 rowspan-1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="plan">
+                    <div class="plan-percend-sold">
+                        <p>Продано</p>
+                        <h4>29%</h4>
+                        <p>объектов</p>
+                    </div>
+                    <img src="img/plan.jpg" alt="">
+                    <div class="plan-marks">
+                        <!-- allowed/sold/booked -->
+                        <div class="plan-mark allowed" data-house-num="1">
+                            <p class="house-num">145</p>
+                            <div class="house-desc">
+                                <h4>КОТТЕДЖ 145</h4>
+                                <div class="parameters">
+                                    <div class="pair">
+                                        <p class="name">Стоимость</p>
+                                        <p class="value">по запросу</p>
+                                    </div>
+                                    <div class="pair">
+                                        <p class="name">Площадь</p>
+                                        <p class="value">175,0 м<sup>2</sup></p>
+                                    </div>
+                                    <div class="pair">
+                                        <p class="name">Площадь участка</p>
+                                        <p class="value">7,41 соток</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
+            </section>
+            <section class="decoration">
+                <div class="container">
+                    <h4 class="headline">Варианты отделки</h4>
+                    <p class="typeset">Отделка white box, для тех, кто мечтает об уникальном пространстве</p>
+                </div>
+                    <ul class="decoration-options container-left">
+                        <li>
+                            <div>
+                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                                продуманность, удобство и оптимальное использование пространства.</p>
+                                <div class="decoration-name">
+                                    <h4>1. токио</h4>
+                                    <hr>
+                                    <p>25</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                            <div class="pictures">
+                                <img src="img/decoration-types/1.jpg" alt="decor1">
+                                <!-- <img src="img/decoration-types/1.jpg" alt="decor1"> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                                продуманность, удобство и оптимальное использование пространства.</p>
+                                <div class="decoration-name">
+                                    <h4>2. БЕРГЕН</h4>
+                                    <hr>
+                                    <p>19</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                            <div class="pictures">
+                                <img src="img/decoration-types/2.jpg" alt="decor1">
+                                <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                                продуманность, удобство и оптимальное использование пространства.</p>
+                                <div class="decoration-name">
+                                    <h4>3. НЬЮ-ЙОРК</h4>
+                                    <hr>
+                                    <p>25</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                            <div class="pictures">
+                                <img src="img/decoration-types/3.jpg" alt="decor3">
+                                <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                            </div>
+                        </li>
+                    </ul>
+            </section>
+            <section class="white-box">
+                <div class="container">
+                    <div class="white-box-header">
+                        <h4 class="logo">White Box</h4>
+                        <ul>
+                            <li>Сделана стяжка пола. Полы - идеально ровные.</li>
+                            <li>Гидроизоляция.</li>
+                            <li>Уже готовые теплые полы на первом этаже и во всех санузлах.</li>
+                            <li>Установлены конвекторы (батареи отопления).</li>
+                            <li>Стены, полностью готовы для финишной отделки.</li>
+                            <li>Внутренние перегородки уже готовы.</li>
+                        </ul>
+                        <ul>
+                            <li>Электричество, канализация, газ и водопровод, уже подключены и разведены по Вашему дому.</li>
+                            <li>Полностью готовая котельная.</li>
+                            <li>Парковочные места капитальные, а не просто навес. Есть места для 2-х машин.</li>
+                            <li>Вес участок покрыт газоном, марки .... .</li>
+                            <li>Калитка и ворота, готовы к установке автоматического привода.</li>
+                        </ul>
+                    </div>
+                    <div class="pictire-collection">
+                        <img src="img/white-box-images/1.jpg" alt="" class="colspan-1 rowspan-1">
+                        <img src="img/white-box-images/2.jpg" alt="" class="colspan-2 rowspan-2">
+                        <img src="img/white-box-images/3.jpg" alt="" class="colspan-1 rowspan-1">
+                        <img src="img/white-box-images/4.jpg" alt="" class="colspan-1 rowspan-1">
+                        <img src="img/white-box-images/5.jpg" alt="" class="colspan-1 rowspan-1">
+                    </div>
+                </div>
+            </section>
+            <section class="house-pick">
+                <div class="container">
+                    <div class="house-pick-header">
+                        <h4 class="headline">Выбор дома</h4>
+                        <p class="allowed">Свободен</p>
+                        <p class="sold">Продан</p>
+                        <p class="booked">Забронирован</p>
+                    </div>
+                    <div class="house-pick-cards">
+                        <div class="house-pick-card">
+                            <img src="img/house-choose-images/1.jpg" alt="house1">
+                            <div class="house-pick-card-content">
+                                <p>Коттедж с отделкой 126 кв.м.</p>
+                                <div class="numbers">
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark sold">145</p>
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark booked">145</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-pick-card">
+                            <img src="img/house-choose-images/2.jpg" alt="house2">
+                            <div class="house-pick-card-content">
+                                <p>Коттедж с отделкой 135 кв.м.</p>
+                                <div class="numbers">
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark sold">145</p>
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark booked">145</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-pick-card">
+                            <img src="img/house-choose-images/3.jpg" alt="house3">
+                            <div class="house-pick-card-content">
+                                <p>Коттедж с отделкой 120 кв.м.</p>
+                                <div class="numbers">
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark sold">145</p>
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark booked">145</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-pick-card">
+                            <img src="img/house-choose-images/4.jpg" alt="house4">
+                            <div class="house-pick-card-content">
+                                <p>Коттедж с отделкой 131 кв.м.</p>
+                                <div class="numbers">
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark sold">145</p>
+                                    <p class="plan-mark allowed">145</p>
+                                    <p class="plan-mark booked">145</p>
+                                </div>
+                                <div class="slider">
+                                    <button class="slider-btn inactive">&lt;</button>
+                                    <button class="slider-btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="order-section">
+                <div class="bgi">
+                    <div class="bgi-color"></div>
+                </div>
+                <div class="container">
+                    <h4 class="headline">Запланируйте просмотр участка<span>и зафиксируйте цену!</span></h4>
+                    <form action="#">
+                        <input type="tel" name="phone" id="" placeholder="Введите номер телефона">
+                        <button type="submit" class="btn"><img src="img/offer-ico.svg" alt="submit">Получить
+                            предложение</button>
+                        <p>Нажимая на кнопку, вы соглашаетесь с правилами <a href="#">обработки персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <navbar class="navbar">
+                    <nav class="navbar-logo"><a href="/">CRUKSHINO VILLAGE</a></nav>
+                    <nav class="navbar-socnets">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/vk.png" alt="VK"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/fb.png" alt="FB"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/ok.png" alt="OK"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/Whatsapp.png" alt="WhatsApp"></a></li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar-texts">
+                        <p>Есть вопросы? <span>Звоните!</span></p>
+                        <h4><a href="tel:+79252119123">+7 (925) 211-91-23</a></h4>
+                        <p class="pseudo-green-circle">Время работы: с 8 до 20</p>
+                    </nav>
+                </navbar>
+            </div>
+        </footer>
     </div>
 
 </body>
+
 </html>
