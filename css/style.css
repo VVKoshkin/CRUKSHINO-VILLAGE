@@ -2,6 +2,11 @@ header {
     padding-top: 45px;
     position: relative;
 }
+
+header>.container {
+    position: relative;
+}
+
 header>.bgi {
     position: absolute;
     top: 0;
@@ -15,6 +20,7 @@ header>.bgi {
     background-size: cover;
     z-index: -2;
 }
+
 header>.bgi>.bgi-color {
     width: 100%;
     height: 100%;
@@ -25,7 +31,7 @@ header>.bgi>.bgi-color {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .navbar-logo {
@@ -82,7 +88,9 @@ header>.bgi>.bgi-color {
 
 h1 {
     color: #fff;
+    margin-bottom: 75px;
 }
+
 
 h1>span.headline-gradient {
     background: linear-gradient(90.55deg, #FFFFFF 0.22%, #E9C878 99.81%);
@@ -90,21 +98,562 @@ h1>span.headline-gradient {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    display: block;
+    text-transform: uppercase;
+    font-size: 68px;
 }
 
 h1>span.headline-smaller {
     display: inline-block;
     font-size: 45px;
+    text-transform: uppercase;
+    color: #FFF;
 }
 
 h1>span.headline-price {
+    display: inline;
     color: #FFFFFF;
     font-size: 18px;
     margin-left: 40px;
     vertical-align: middle;
-    border:2px solid #E9C878;
+    background-image: url('../img/price-border.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     padding: 14px;
-    border-radius: 4px;
-    border-image-slice: 44;
+    padding-right: 30px;
+}
 
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-buttons>button {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #6E5A45;
+
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25);
+    padding: 27px 45px 24px 35px;
+}
+
+.header-buttons>button>img {
+    margin-right: 25px;
+}
+
+.header-3D>button {
+    position: relative;
+    background: url('../img/deg360ico-bg.svg');
+    background-position: center 40%;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.header-3D-text {
+    position: relative;
+    left: 50px;
+    top: -50px;
+    z-index: 1;
+    padding: 40px;
+    background: rgba(55, 102, 204, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+.header-3D-text>p {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.header-3D-text>a {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #E9C878;
+    cursor: pointer;
+}
+
+.personal-offer {
+    background-image: url('../img/offer-image.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding-right: 100px;
+    position: relative;
+    top: 185px;
+}
+
+.personal-offer>.container-left {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    position: relative;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.personal-offer .border {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: calc(100% - 10px);
+    height: calc(100% - 20px);
+    border: 1px solid #F0F0F0;
+    border-left: none;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 1;
+}
+
+
+.personal-offer-container {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: none;
+}
+
+.personal-offer-text {
+    padding-left: 260px;
+    position: relative;
+    z-index: 2;
+}
+
+.personal-offer-text>h4 {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #28292E;
+    margin-bottom: 20px;
+}
+
+.personal-offer-text>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(40, 41, 46, 0.8);
+}
+
+.personal-offer-form {
+    position: relative;
+    z-index: 2;
+    padding-right: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.personal-offer-form>input[type="tel"],
+.btn {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    letter-spacing: 0.1em;
+    width: 370px;
+    height: 80px;
+    border: none;
+    border-radius: 100px;
+}
+
+.personal-offer-form>input[type="tel"] {
+    color: #A0A0A0;
+    background: #F5F5F5;
+    box-shadow: inset 0px 2px 0px #EBEBEB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.personal-offer-form>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(40, 41, 46, 0.7);
+}
+
+.personal-offer-form>p>a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.advantages {
+    padding-top: 300px;
+    padding-bottom: 120px;
+    background-color: #F5F5F5;
+}
+
+.advantages-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 110px;
+}
+
+.advantages-content .headline {
+    margin-bottom: 40px;
+}
+
+.advantages .cards {
+    grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+}
+
+.advantages .card.wide {
+    grid-column: span 4;
+}
+
+.porotherm {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.porotherm-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+.porotherm-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.porotherm-card h4 {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    /* identical to box height, or 140% */
+
+
+    color: #28292E;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.porotherm-card p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: #28292E;
+}
+
+.territory {
+    position: relative;
+}
+
+.territory-bgi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/territory-bgi.jpg');
+    z-index: -1;
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: contain;
+}
+
+.territory .headline {
+    color: #28292E;
+    margin-bottom: 25px;
+}
+
+.territory .typeset {
+    font-size: 20px;
+    line-height: 34px;
+    color: #28292E;
+}
+
+.territory-card {
+    display: flex;
+    align-items: center;
+}
+
+
+.territory-card .pictures {
+    width: 50vw;
+    height: auto;
+}
+
+.territory-card .pictures>img {
+    width: 49.6vw;
+}
+
+.territory-card .pictures.right {
+    width: 50vw;
+    margin-left: 215px;
+}
+
+.territory-card .pictures.left {
+    margin-right: 115px;
+}
+
+.houses {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.houses .cards {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+}
+
+.houses .row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.houses .row>p {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.houses .row>p>span {
+    font-size: 36px;
+    line-height: 43px;
+    display: block;
+    margin-top: 15px;
+}
+
+.houses .picture-collection {
+    gap: 50px;
+}
+
+.displacement {
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 570px;
+}
+
+.displacement .bgi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../img/map.jpg');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.displacement .headline {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+}
+
+.displacement .headline>span {
+    margin: 0;
+}
+
+.settlement-photo {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.settlement-photo .row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+.settlement-photo .picture-collection {
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.decoration {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.decoration-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.decoration-header>p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    background-image: url('../img/decoration-p-bgi.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 22px 30px;
+}
+
+.decoration-options {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.decoration-option {
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
+}
+
+.decoration-option .headline {
+    margin-bottom: 25px;
+}
+
+.decoration-option .typeset {
+    margin-bottom: 155px;
+}
+
+.decoration-option img {
+    width: 50vw;
+}
+
+.decoration-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.decoration-name>h4 {
+    font-family: 'Neumann';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #007AFF;
+}
+
+.decoration-name>hr {
+    margin: 0;
+    background-color: #28292E;
+    width: 1px;
+    display: block;
+    rotate: 15deg;
+    border: none;
+    height: 50px;
+}
+
+.decoration-name>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 19px;
+    color: #28292E;
+    opacity: 0.8;
+}
+
+.decoration-name>p::after {
+    content: '\A Фото';
+    font-size: 18px;
+    white-space: pre;
+}
+
+.white-box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #3766CC;
+}
+
+.white-box-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.white-box-header .headline {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.white-box-header ul {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.white-box-header ul>li {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.white-box-header ul>li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.white-box .picture-collection>.row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }

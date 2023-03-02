@@ -41,7 +41,8 @@
                     <nav class="navbar-logo"><a href="/">CRUKSHINO VILLAGE</a></nav>
                     <nav class="navbar-socnets">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a>
+                            </li>
                             <li><a href="#" target="_blank"><img src="img/socnets/vk.png" alt="VK"></a></li>
                             <li><a href="#" target="_blank"><img src="img/socnets/fb.png" alt="FB"></a></li>
                             <li><a href="#" target="_blank"><img src="img/socnets/ok.png" alt="OK"></a></li>
@@ -56,27 +57,33 @@
                 </navbar>
                 <div class="header-main">
                     <h1 class="headline">
-                        <span class="headline-gradient">СВОЙ ДОМ В МОСКВЕ!</span>
-                        <span class="headline-smaller">В КРЁКШИНО ВИЛЛАДЖ</span> <span class="headline-price">От 10 000 000 рублей!</span></h1>
-                    <p class="typeset">От 10 000 000 рублей!</p>
+                        <span class="headline-gradient">Свой дом в Москве!</span>
+                        <span class="headline-smaller">В Крёкшино Вилладж</span>
+                        <span class="headline-price">От 10 000 000 рублей!</span>
+                    </h1>
                 </div>
-                <button class="btn"><img src="img/cottage-ico.png" alt="cottage">Выбирайте свой коттедж</button>
-                <div class="header-3D">
-                    <button class="btn"><img src="img/deg360ico.png" alt="deg360"></button>
-                    <p>Посмотрите<br>
-                        свой участок<br>
-                        в 3D - проекте</p>
-                    <a href="#">Посмотреть</a>
+                <div class="header-buttons">
+                    <button class="btn"><img src="img/cottage-ico.png" alt="cottage">Выбирайте свой коттедж</button>
+                    <div class="header-3D">
+                        <button class="btn"><img src="img/deg360ico.svg" alt="deg360"></button>
+                        <div class="header-3D-text">
+                            <p>Посмотрите<br>
+                                свой участок<br>
+                                в 3D - проекте</p>
+                            <a href="#">Посмотреть</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="personal-offer">
-                <div class="container">
-                    <div>
+                <div class="container-left">
+                    <div class="border"></div>
+                    <div class="personal-offer-text">
                         <h4>Персональное предложение<br>именно для Вас!</h4>
                         <p>Введите свой номер телефона, и мы перезвоним Вам в течение 15 минут для консультации:
                             Уточним у Вас все параметры Ваших предпочтений и предложим Вам лучший вариант!</p>
                     </div>
-                    <form action="#">
+                    <form class="personal-offer-form" action="#">
                         <input type="tel" name="phone" id="" placeholder="Введите номер телефона">
                         <button type="submit" class="btn"><img src="img/offer-ico.svg" alt="submit">Получить
                             предложение</button>
@@ -93,37 +100,45 @@
                         <div>
                             <h4 class="headline">Преимущества<span>вашего нового дома в Москве</span></h4>
                             <p class="typeset">КП «Крёкшино Вилладж» спроектирован в ультрамодном европейском
-                                архитектурном стиле.</p>
-                            <p class="typeset">И это, подчёркивает его индивидуальность. Каждый дом, гармонично
-                                вливается, в единое целое коттеджного посёлка.</p>
+                                архитектурном стиле.
+                                <br><br>
+                                И это, подчёркивает его индивидуальность. Каждый дом, гармонично
+                                вливается, в единое целое коттеджного посёлка.
+                            </p>
                         </div>
-                        <img src="img/advantages-image.jpg" alt="adv-image">
+                        <img src="img/advantages-image.png" alt="adv-image">
                     </div>
                     <div class="cards">
                         <div class="card">
                             <p class="card-number">01</p>
-                            <img src="img/cards-images/1.png" alt="adv01" class="circle-bottom circle-right">
+                            <div class="image circle-bottom circle-right">
+                                <img src="img/cards-images/1.png" alt="adv01">
+                            </div>
                             <p class="card-desc">Ипотека от 6%</p>
                         </div>
                         <div class="card">
                             <p class="card-number">02</p>
-                            <img src="img/cards-images/2.png" alt="adv02" class="circle-top circle-right">
+                            <div class="image circle-top circle-right"><img src="img/cards-images/2.png" alt="adv02">
+                            </div>
                             <p class="card-desc">Первый взнос: 10%</p>
                         </div>
                         <div class="card">
                             <p class="card-number">03</p>
-                            <img src="img/cards-images/3.png" alt="adv03" class="circle-bottom circle-left">
+                            <div class="image circle-bottom circle-left"><img src="img/cards-images/3.png" alt="adv03">
+                            </div>
                             <p class="card-desc">Навес для 2-х машин</p>
                         </div>
                         <div class="card">
                             <p class="card-number">04</p>
-                            <img src="img/cards-images/4.png" alt="adv04" class="circle-top circle-left">
+                            <div class="image circle-top circle-left"><img src="img/cards-images/4.png" alt="adv04">
+                            </div>
                             <p class="card-desc">Московская прописка</p>
                         </div>
-                        <!-- TODO итд -->
+                        TODO итд
                         <div class="card wide">
                             <p class="card-number">13</p>
-                            <img src="img/cards-images/13.png" alt="adv13" class="circle-top circle-left">
+                            <div class="image circle-top circle-left"><img src="img/cards-images/13.png" alt="adv13">
+                            </div>
                             <p class="card-desc">Стены вашего дома сделаны из экологического керамического
                                 блока</p>
                         </div>
@@ -132,7 +147,7 @@
             </section>
             <section class="porotherm">
                 <div class="container">
-                    <h4 class="headline">Стены сделаны<span>из Porotherm</span></h4>
+                    <h4 class="headline tac">Стены сделаны<span>из Porotherm</span></h4>
                     <div class="porotherm-cards">
                         <div class="porotherm-card">
                             <img src="img/porotherm.png" alt="porotherm">
@@ -165,7 +180,7 @@
                                     поскольку в процессе производства проходит обжиг при температуре около 900 °C.</p>
                             </div>
                         </div>
-                        <!-- ИТД TODO -->
+                        ИТД TODO
                     </div>
                 </div>
             </section>
@@ -173,44 +188,42 @@
                 <div class="territory-bgi">
                     <div class="cover"></div>
                 </div>
-                <div class="container">
-                    <div class="territory-cards">
-                        <div class="territory-card">
-                            <div>
-                                <h4 class="headline"><span>Территория</span></h4>
-                                <p class="typeset">«КП «Крёкшино Вилладж» является закрытой охраняемой территорией.
-                                    Посёлок граничит с живописными чистыми прудами. Крёкшино было излюбленным местом
-                                    посещений
-                                    Л.Н. Толстого»</p>
-                                <div class="slider">
-                                    <button class="slider-btn inactive">&lt;</button>
-                                    <button class="slider-btn">&gt;</button>
-                                </div>
-                            </div>
-                            <div class="pictures">
-                                <img class="active" src="img/territyty-image.jpg" alt="">
-                                <!-- <img src="img/offer-image.jpg" alt="">
-                                <img src="img/white-box-image.jpg" alt=""> -->
+                <div class="territory-cards">
+                    <div class="territory-card">
+                        <div class="container-left">
+                            <h4 class="headline"><span>Территория</span></h4>
+                            <p class="typeset">«КП «Крёкшино Вилладж» является закрытой охраняемой территорией.
+                                Посёлок граничит с живописными чистыми прудами. Крёкшино было излюбленным местом
+                                посещений
+                                Л.Н. Толстого»</p>
+                            <div class="slider">
+                                <button class="slider-btn inactive back"></button>
+                                <button class="slider-btn forw"></button>
                             </div>
                         </div>
-                        <div class="territory-card">
-                            <div class="pictures">
-                                <img class="active" src="img/territyty-image.jpg" alt="">
-                                <!-- <img src="img/offer-image.jpg" alt="">
+                        <div class="pictures right">
+                            <img class="active" src="img/territyty-image.jpg" alt="">
+                            <!-- <img src="img/offer-image.jpg" alt="">
+                                <img src="img/white-box-image.jpg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="territory-card">
+                        <div class="pictures left">
+                            <img class="active" src="img/station-image.jpg" alt="">
+                            <!-- <img src="img/offer-image.jpg" alt="">
                                                             <img src="img/white-box-image.jpg" alt=""> -->
-                            </div>
-                            <div>
-                                <h4 class="headline"><span>Транспортная доступность</span></h4>
-                                <p class="typeset">Очень удобная транспортная доступность до Крёкшино, обеспечивается
-                                    наличием Минского скоростного шоссе, Киевского
-                                    скоростного шоссе, а также наличием электрички - ж/д станция Крёкшино находится в 15
-                                    минутах ходьбы. Школы, детские
-                                    сады, продуктовые магазины, рынки, рестораны находится в непосредственной близости.
-                                </p>
-                                <div class="slider">
-                                    <button class="slider-btn inactive">&lt;</button>
-                                    <button class="slider-btn">&gt;</button>
-                                </div>
+                        </div>
+                        <div class="container-right">
+                            <h4 class="headline"><span>Транспортная доступность</span></h4>
+                            <p class="typeset">Очень удобная транспортная доступность до Крёкшино, обеспечивается
+                                наличием Минского скоростного шоссе, Киевского
+                                скоростного шоссе, а также наличием электрички - ж/д станция Крёкшино находится в 15
+                                минутах ходьбы. Школы, детские
+                                сады, продуктовые магазины, рынки, рестораны находится в непосредственной близости.
+                            </p>
+                            <div class="slider">
+                                <button class="slider-btn inactive back"></button>
+                                <button class="slider-btn forw"></button>
                             </div>
                         </div>
                     </div>
@@ -218,7 +231,7 @@
             </section>
             <section class="houses">
                 <div class="container">
-                    <h4 class="headline">Дома с участками</h4>
+                    <h4 class="headline tac">Дома с участками</h4>
                     <div class="cards">
                         <div class="card">
                             <p class="card-number">01</p>
@@ -271,137 +284,144 @@
                 </div>
             </section>
             <section class="displacement">
-                <img src="img/map.jpg" alt="map">
+                <div class="bgi"></div>
                 <div class="container">
                     <h4 class="headline"><span>Расположение</span></h4>
                 </div>
             </section>
             <section class="settlement-photo">
                 <div class="container">
-                    <h4 class="headline">Фото посёлка</h4>
+                    <h4 class="headline tac">Фото посёлка</h4>
                     <div class="picture-collection">
                         <div class="row">
                             <img src="img/settlement-photos/1.jpg" alt="" class="colspan-2 rowspan-1">
                             <img src="img/settlement-photos/2.jpg" alt="" class="colspan-1 rowspan-1">
-                        </div>
-                        <div class="row">
                             <img src="img/settlement-photos/3.jpg" alt="" class="colspan-1 rowspan-2">
                             <img src="img/settlement-photos/4.jpg" alt="" class="colspan-1 rowspan-1">
                             <img src="img/settlement-photos/5.jpg" alt="" class="colspan-1 rowspan-1">
-                        </div>
-                        <div class="row">
                             <img src="img/settlement-photos/6.jpg" alt="" class="colspan-2 rowspan-1">
                         </div>
                     </div>
                 </div>
             </section>
+            TODO план...
             <section class="plan">
-                    <div class="plan-percend-sold">
-                        <p>Продано</p>
-                        <h4>29%</h4>
-                        <p>объектов</p>
-                    </div>
-                    <img src="img/plan.jpg" alt="">
-                    <div class="plan-marks">
-                        <!-- allowed/sold/booked -->
-                        <div class="plan-mark allowed" data-house-num="1">
-                            <p class="house-num">145</p>
-                            <div class="house-desc">
-                                <h4>КОТТЕДЖ 145</h4>
-                                <div class="parameters">
-                                    <div class="pair">
-                                        <p class="name">Стоимость</p>
-                                        <p class="value">по запросу</p>
-                                    </div>
-                                    <div class="pair">
-                                        <p class="name">Площадь</p>
-                                        <p class="value">175,0 м<sup>2</sup></p>
-                                    </div>
-                                    <div class="pair">
-                                        <p class="name">Площадь участка</p>
-                                        <p class="value">7,41 соток</p>
-                                    </div>
+                <div class="plan-percend-sold">
+                    <p>Продано</p>
+                    <h4>29%</h4>
+                    <p>объектов</p>
+                </div>
+                <div class="bgi"></div>
+                <!-- <img src="img/plan.jpg" alt=""> -->
+                <div class="plan-marks">
+                    <!-- allowed/sold/booked -->
+                    <div class="plan-mark allowed" data-house-num="1">
+                        <p class="house-num">145</p>
+                        <div class="house-desc">
+                            <h4>КОТТЕДЖ 145</h4>
+                            <div class="parameters">
+                                <div class="pair">
+                                    <p class="name">Стоимость</p>
+                                    <p class="value">по запросу</p>
+                                </div>
+                                <div class="pair">
+                                    <p class="name">Площадь</p>
+                                    <p class="value">175,0 м<sup>2</sup></p>
+                                </div>
+                                <div class="pair">
+                                    <p class="name">Площадь участка</p>
+                                    <p class="value">7,41 соток</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- ... -->
                     </div>
+                    <!-- ... -->
+                </div>
             </section>
             <section class="decoration">
                 <div class="container">
+                    <div class="decoration-header">
                     <h4 class="headline">Варианты отделки</h4>
-                    <p class="typeset">Отделка white box, для тех, кто мечтает об уникальном пространстве</p>
+                    <p class="typeset">Отделка white box, для тех, кто <br> мечтает об уникальном пространстве</p>
+                    </div>
                 </div>
-                    <ul class="decoration-options container-left">
-                        <li>
-                            <div>
-                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
-                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
-                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                <ul class="decoration-options container-left">
+                    <li class="decoration-option">
+                        <div>
+                            <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                            <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства,
+                                так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они
+                                сочетают в себе красоту,
                                 продуманность, удобство и оптимальное использование пространства.</p>
-                                <div class="decoration-name">
-                                    <h4>1. токио</h4>
-                                    <hr>
-                                    <p>25</p>
-                                </div>
-                                <div class="slider">
-                                    <button class="slider-btn inactive">&lt;</button>
-                                    <button class="slider-btn">&gt;</button>
-                                </div>
+                            <div class="decoration-name">
+                                <h4>1. токио</h4>
+                                <hr>
+                                <p>25</p>
                             </div>
-                            <div class="pictures">
-                                <img src="img/decoration-types/1.jpg" alt="decor1">
-                                <!-- <img src="img/decoration-types/1.jpg" alt="decor1"> -->
+                            <div class="slider">
+                                <button class="slider-btn inactive back"></button>
+                                <button class="slider-btn forw"></button>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
-                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
-                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                        </div>
+                        <div class="pictures">
+                            <img src="img/decoration-types/1.jpg" alt="decor1">
+                            <!-- <img src="img/decoration-types/1.jpg" alt="decor1"> -->
+                        </div>
+                    </li>
+                    <li class="decoration-option">
+                        <div>
+                            <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                            <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства,
+                                так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они
+                                сочетают в себе красоту,
                                 продуманность, удобство и оптимальное использование пространства.</p>
-                                <div class="decoration-name">
-                                    <h4>2. БЕРГЕН</h4>
-                                    <hr>
-                                    <p>19</p>
-                                </div>
-                                <div class="slider">
-                                    <button class="slider-btn inactive">&lt;</button>
-                                    <button class="slider-btn">&gt;</button>
-                                </div>
+                            <div class="decoration-name">
+                                <h4>2. БЕРГЕН</h4>
+                                <hr>
+                                <p>19</p>
                             </div>
-                            <div class="pictures">
-                                <img src="img/decoration-types/2.jpg" alt="decor1">
-                                <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                            <div class="slider">
+                                <button class="slider-btn inactive back"></button>
+                                <button class="slider-btn forw"></button>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
-                                <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства, так и время.
-                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они сочетают в себе красоту,
+                        </div>
+                        <div class="pictures">
+                            <img src="img/decoration-types/2.jpg" alt="decor1">
+                            <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                        </div>
+                    </li>
+                    <li class="decoration-option">
+                        <div>
+                            <h4 class="headline"><span>Дизайнерская отделка «Под Ключ»</span></h4>
+                            <p class="typeset">Заказывая типовой вариант отделки, вы сможете сэкономить как средства,
+                                так и время.
+                                Мы предлагаем три стиля отделки. Тщательно пропработанные нашими дизайнерами. Они
+                                сочетают в себе красоту,
                                 продуманность, удобство и оптимальное использование пространства.</p>
-                                <div class="decoration-name">
-                                    <h4>3. НЬЮ-ЙОРК</h4>
-                                    <hr>
-                                    <p>25</p>
-                                </div>
-                                <div class="slider">
-                                    <button class="slider-btn inactive">&lt;</button>
-                                    <button class="slider-btn">&gt;</button>
-                                </div>
+                            <div class="decoration-name">
+                                <h4>3. НЬЮ-ЙОРК</h4>
+                                <hr>
+                                <p>25</p>
                             </div>
-                            <div class="pictures">
-                                <img src="img/decoration-types/3.jpg" alt="decor3">
-                                <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                            <div class="slider">
+                                <button class="slider-btn inactive back"></button>
+                                <button class="slider-btn forw"></button>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="pictures">
+                            <img src="img/decoration-types/3.jpg" alt="decor3">
+                            <!-- <img src="img/decoration-types/2.jpg" alt="decor1"> -->
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="white-box">
                 <div class="container">
+                    TODO тут не очень красиво, доработать!
                     <div class="white-box-header">
-                        <h4 class="logo">White Box</h4>
+                        <h4 class="headline">White<br>Box</h4>
                         <ul>
                             <li>Сделана стяжка пола. Полы - идеально ровные.</li>
                             <li>Гидроизоляция.</li>
@@ -411,19 +431,22 @@
                             <li>Внутренние перегородки уже готовы.</li>
                         </ul>
                         <ul>
-                            <li>Электричество, канализация, газ и водопровод, уже подключены и разведены по Вашему дому.</li>
+                            <li>Электричество, канализация, газ и водопровод, уже подключены и разведены по Вашему дому.
+                            </li>
                             <li>Полностью готовая котельная.</li>
                             <li>Парковочные места капитальные, а не просто навес. Есть места для 2-х машин.</li>
                             <li>Вес участок покрыт газоном, марки .... .</li>
                             <li>Калитка и ворота, готовы к установке автоматического привода.</li>
                         </ul>
                     </div>
-                    <div class="pictire-collection">
-                        <img src="img/white-box-images/1.jpg" alt="" class="colspan-1 rowspan-1">
-                        <img src="img/white-box-images/2.jpg" alt="" class="colspan-2 rowspan-2">
-                        <img src="img/white-box-images/3.jpg" alt="" class="colspan-1 rowspan-1">
-                        <img src="img/white-box-images/4.jpg" alt="" class="colspan-1 rowspan-1">
-                        <img src="img/white-box-images/5.jpg" alt="" class="colspan-1 rowspan-1">
+                    <div class="picture-collection">
+                        <div class="row">
+                            <img src="img/white-box-images/1.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/white-box-images/2.jpg" alt="" class="colspan-2 rowspan-2">
+                            <img src="img/white-box-images/3.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/white-box-images/4.jpg" alt="" class="colspan-1 rowspan-1">
+                            <img src="img/white-box-images/5.jpg" alt="" class="colspan-1 rowspan-1">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -526,7 +549,8 @@
                     <nav class="navbar-logo"><a href="/">CRUKSHINO VILLAGE</a></nav>
                     <nav class="navbar-socnets">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/socnets/instagram.png" alt="instagramm"></a>
+                            </li>
                             <li><a href="#" target="_blank"><img src="img/socnets/vk.png" alt="VK"></a></li>
                             <li><a href="#" target="_blank"><img src="img/socnets/fb.png" alt="FB"></a></li>
                             <li><a href="#" target="_blank"><img src="img/socnets/ok.png" alt="OK"></a></li>
