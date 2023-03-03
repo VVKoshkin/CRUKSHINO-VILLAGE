@@ -217,6 +217,7 @@ a {
     display: grid;
 }
 
+
 .rowspan-1 {
     grid-row: span 1;
 }
@@ -231,4 +232,96 @@ a {
 
 .colspan-2 {
     grid-column: span 2;
+}
+
+@keyframes blink-anim {
+    0% {
+        color:#FFF;
+    }
+    50% {
+        color: #F00;
+    }
+    100% {
+        color:#FFF;
+    }
+}
+
+p.todo {
+    animation-duration: 1s;
+    animation-name: blink-anim;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid red;;
+}
+
+
+.allowed, .allowed::before {
+    background-color: #06B436;
+}
+
+.sold, .sold::before {
+    background-color: #B40606;
+    /* border-color: #B40606; */
+}
+
+.booked, .booked::before {
+    background-color: #007AFF;
+    /* border-color: #007AFF; */
+}
+
+
+.plan-mark {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    padding-left: 7px;
+    padding-right: 14px;
+    mask-image: url(../img/plan-flag.svg);
+    mask-repeat: no-repeat;
+    mask-position: center right;
+    -webkit-mask-image: url(../img/plan-flag.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center right;
+}
+
+form>input[type="tel"],
+.btn {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    letter-spacing: 0.1em;
+    width: 370px;
+    height: 80px;
+    border: none;
+    border-radius: 100px;
+}
+
+form>input[type="tel"] {
+    color: #A0A0A0;
+    background: #F5F5F5;
+    box-shadow: inset 0px 2px 0px #EBEBEB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+form>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(40, 41, 46, 0.7);
+}
+
+form>p>a {
+    color: inherit;
+    text-decoration: underline;
 }

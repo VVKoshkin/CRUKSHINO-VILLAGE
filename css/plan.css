@@ -1,0 +1,17 @@
+.plan-container {
+    max-width: 1540px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #0E0EeE;
+    height: 500px;
+    position: relative;
+}
+
+.plan-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(86, 123, 186);
+}

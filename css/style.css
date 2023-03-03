@@ -86,31 +86,26 @@ header>.bgi>.bgi-color {
     padding-top: 95px;
 }
 
-h1 {
-    color: #fff;
-    margin-bottom: 75px;
-}
-
-
-h1>span.headline-gradient {
+span.headline-gradient {
     background: linear-gradient(90.55deg, #FFFFFF 0.22%, #E9C878 99.81%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: block;
     text-transform: uppercase;
     font-size: 68px;
+    line-height: inherit;
 }
 
-h1>span.headline-smaller {
+span.headline-smaller {
     display: inline-block;
     font-size: 45px;
     text-transform: uppercase;
     color: #FFF;
 }
 
-h1>span.headline-price {
+span.headline-price {
     display: inline;
     color: #FFFFFF;
     font-size: 18px;
@@ -126,11 +121,15 @@ h1>span.headline-price {
 
 .header-buttons {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
+.header-buttons .col-choose {
+    flex-grow: 1;
+    padding-top: 75px;
+}
 
-.header-buttons>button {
+.header-buttons .col-choose>button {
     font-family: 'Museo Sans Cyrl';
     font-style: normal;
     font-weight: 700;
@@ -147,7 +146,7 @@ h1>span.headline-price {
     padding: 27px 45px 24px 35px;
 }
 
-.header-buttons>button>img {
+.header-buttons>.col-choose button>img {
     margin-right: 25px;
 }
 
@@ -163,6 +162,7 @@ h1>span.headline-price {
 }
 
 .header-3D-text {
+    min-height: 420px;
     position: relative;
     left: 50px;
     top: -50px;
@@ -194,15 +194,16 @@ h1>span.headline-price {
 }
 
 .personal-offer {
-    background-image: url('../img/offer-image.jpg');
-    background-position: bottom left;
-    background-repeat: no-repeat;
+    z-index: 2;
     padding-right: 100px;
-    position: relative;
-    top: 185px;
+    position: absolute;
+    bottom: -185px;
 }
 
 .personal-offer>.container-left {
+    background-image: url('../img/offer-image.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -271,42 +272,6 @@ h1>span.headline-price {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-.personal-offer-form>input[type="tel"],
-.btn {
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
-    letter-spacing: 0.1em;
-    width: 370px;
-    height: 80px;
-    border: none;
-    border-radius: 100px;
-}
-
-.personal-offer-form>input[type="tel"] {
-    color: #A0A0A0;
-    background: #F5F5F5;
-    box-shadow: inset 0px 2px 0px #EBEBEB;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-}
-
-.personal-offer-form>p {
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: rgba(40, 41, 46, 0.7);
-}
-
-.personal-offer-form>p>a {
-    color: inherit;
-    text-decoration: underline;
 }
 
 .advantages {
@@ -444,7 +409,7 @@ h1>span.headline-price {
 .houses .row {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     position: relative;
 }
 
@@ -654,6 +619,162 @@ h1>span.headline-price {
 }
 
 .white-box .picture-collection>.row {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.house-pick {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.house-pick-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.house-pick-header>p {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.house-pick-header>p::before {
+    content:'';
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    margin-right: 20px;
+}
+
+.house-pick-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(560px, 2fr));
+    gap: 30px;
+}
+
+.house-pick-card {
+    position: relative;
+}
+
+.house-pick-card-content {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.house-pick-card-content>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;    
+    color: #FFFFFF;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.house-pick-card-content>.numbers {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 65px;
+}
+
+.house-pick-card .slider {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 35px;
+    top: 50%;    
+    width: calc(100% - 35px - 20px);
+}
+
+.house-pick-card .slider>button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+.order-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.order-section .bgi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/footer-bgi.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.order-section .bgi>.bgi-color {
+    opacity: .9;
+    width: 100%;
+    height: 100%;
+    background-color: #3766CC;
+}
+
+.order-section .headline {
+    text-align: center;
+}
+
+.order-section .headline-smaller {
+    text-transform: lowercase;
+}
+
+.order-section form {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.order-section form>p {
+    line-height: 20px;    
+    text-align: center;    
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.order-section form>p>a {
+    display: block;
+}
+
+footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #00004A;
+}
+
+.pseudo-green-circle {
+    display: flex;
+    align-items: center;
+}
+
+.pseudo-green-circle::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #14BE5C;
+    box-shadow: 0px 1px 10px rgba(20, 190, 92, 0.75);
+    border-radius:50%;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
 }
