@@ -150,8 +150,12 @@ span.headline-price {
     margin-right: 25px;
 }
 
-.header-3D>button {
+.header-buttons .col-3D {
     position: relative;
+}
+
+.col-3D>button {
+    position: absolute;
     background: url('../img/deg360ico-bg.svg');
     background-position: center 40%;
     border: none;
@@ -159,13 +163,12 @@ span.headline-price {
     width: 100px;
     height: 100px;
     z-index: 2;
+    top: -50px;
+    left: -50px;
 }
 
 .header-3D-text {
     min-height: 420px;
-    position: relative;
-    left: 50px;
-    top: -50px;
     z-index: 1;
     padding: 40px;
     background: rgba(55, 102, 204, 0.5);
@@ -194,52 +197,41 @@ span.headline-price {
 }
 
 .personal-offer {
-    z-index: 2;
-    padding-right: 100px;
-    position: absolute;
-    bottom: -185px;
-}
-
-.personal-offer>.container-left {
     background-image: url('../img/offer-image.jpg');
     background-position: bottom left;
     background-repeat: no-repeat;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    position: relative;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    margin-right: calc(50% - var(--cont-width) / 2 - 85px);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    bottom: -185px;
+    width: calc(50% + var(--cont-width) / 2 + 85px);
 }
 
-.personal-offer .border {
+.personal-offer>.border {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: calc(100% - 10px);
     height: calc(100% - 20px);
+    width: calc(100% - 10px);
     border: 1px solid #F0F0F0;
-    border-left: none;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
 }
 
-
-.personal-offer-container {
-    border: 1px solid grey;
-    padding: 10px;
-    border-radius: 10px;
-    border-left: none;
+.personal-offer>.container {
+    margin-left: auto;
+    margin-right: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .personal-offer-text {
+    padding: 65px;
+    padding-right: 50px;
     padding-left: 260px;
     position: relative;
     z-index: 2;
@@ -267,7 +259,6 @@ span.headline-price {
 .personal-offer-form {
     position: relative;
     z-index: 2;
-    padding-right: 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,14 +394,21 @@ span.headline-price {
 .houses .cards {
     margin-top: 80px;
     margin-bottom: 160px;
-    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 .houses .row {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
     position: relative;
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+}
+
+.houses .row>.grid-cell {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.houses .row img {
+    object-fit: cover;
+    width: 100%;
 }
 
 .houses .row>p {
@@ -761,6 +759,7 @@ footer {
 .pseudo-green-circle {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .pseudo-green-circle::before {
@@ -771,10 +770,4 @@ footer {
     box-shadow: 0px 1px 10px rgba(20, 190, 92, 0.75);
     border-radius:50%;
     margin-right: 10px;
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
 }

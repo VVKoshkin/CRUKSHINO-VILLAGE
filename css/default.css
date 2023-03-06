@@ -33,6 +33,10 @@
     font-weight: 400;
 }
 
+:root {
+    --cont-width: 1170px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -50,15 +54,15 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: var(--cont-width);
 }
 
 .container-left {
-    padding-left: calc((100% - 1170px) / 2);
+    margin-left: calc((100% - var(--cont-width)) / 2);
 }
 
 .container-right {
-    padding-right: calc((100% - 1170px) / 2);   
+    margin-right: calc((100% - var(--cont-width)) / 2);
 }
 
 .headline {
@@ -217,6 +221,10 @@ a {
     display: grid;
 }
 
+.grid-cell {
+    display: grid;
+}
+
 
 .rowspan-1 {
     grid-row: span 1;
@@ -324,4 +332,12 @@ form>p {
 form>p>a {
     color: inherit;
     text-decoration: underline;
+}
+
+.low-res {
+    display: none;
+}
+
+.high-res {
+    display: initial;
 }

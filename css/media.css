@@ -1,34 +1,201 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container {
-        max-width: 960px;
+    :root {
+        --cont-width: 960px;
     }
-
 }
 /* Portrait tablets and small desktops */
 @media screen and (max-width: 991px) {
-    .container {
-        max-width: 750px;
+    :root {
+        --cont-width: 750px;
     }
+    
     .navbar {
         flex-direction: column;
         align-items:flex-start;
         gap: 15px;
     }
     .navbar-texts>p {
+        justify-content: flex-start;
         text-align: left;
     }
 
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .low-res {
+        display: block;
+    }
+
+    .high-res {
+        display: none;
+    }
 
 }
 /* Portrait phones and smaller */
 @media (max-width: 360px) {
-    .container {
-        max-width: 320px;
+    :root {
+        --cont-width: 320px;
     }
 
+    .headline {
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 52px;
+    }
 
+    .headline>span {
+        font-size: 25px;
+        line-height: 52px;
+    }
+
+    .typeset {
+        font-size: 18px;
+    }
+
+    span.headline-gradient {
+        font-size: 45px;
+        line-height: 66px;
+    }
+    span.headline-smaller {
+        font-size: 25px;
+        line-height: 37px;
+        margin-top: 0;
+    }
+    span.headline-price {
+        margin-left: 0;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 150px;
+    }
+
+    .header-buttons .col-choose {
+        padding-top: 25px;
+    }
+
+    .header-buttons .col-choose>button {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .col-3D {
+        align-self: center;
+    }
+
+    .header-3D-text {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .personal-offer {
+        position: relative;
+        bottom: 0;
+        background-image: none;
+    }
+    
+    .personal-offer>.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .personal-offer-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .personal-offer-text>h4 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+
+    form>input[type="tel"], .btn {
+        width: 100%;
+    }
+
+    .advantages {
+        padding-top: 50px;
+    }
+
+    .advantages-content {
+        flex-direction: column;
+    }
+
+    .advantages-content > div {
+        text-align: center;
+    }
+
+    .advantages-content>img {
+        width: 100%;
+    }
+
+    .advantages .card.wide {
+        grid-column: span 1;
+    } 
+
+    .porotherm {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .porotherm-cards {
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    .porotherm-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .porotherm-card>img {
+        width: 100%;
+        order: 2;
+    }
+
+    .territory-card {
+        padding-top: 50px;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .territory-card .container-left, .container-right {
+        margin: 0 auto;
+        max-width: var(--cont-width);
+    }
+
+    .territory-card .headline>span {
+        font-size: 45px;
+        line-height: 66px;
+    }
+
+    .territory-card .typeset {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .territory-card .slider {
+        margin-top: 20px;
+    }
+
+    .territory-card .pictures {
+        order: 2;
+    }
+
+    .territory-card .pictures.left {
+        margin-right: 0;
+        width: 100%;
+    }
+    .territory-card .pictures.right {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .territory-card .pictures>img {
+        width: 100%;
+    }
 }
