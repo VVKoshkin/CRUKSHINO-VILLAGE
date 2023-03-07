@@ -217,29 +217,14 @@ a {
     flex-direction: column;
 }
 
-.picture-collection>.row {
+.picture-collection-row {
     display: grid;
 }
 
-.grid-cell {
-    display: grid;
-}
-
-
-.rowspan-1 {
-    grid-row: span 1;
-}
-
-.colspan-1 {
-    grid-column: span 1;
-}
-
-.rowspan-2 {
-    grid-row: span 2;
-}
-
-.colspan-2 {
-    grid-column: span 2;
+.picture-collection-row__item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes blink-anim {
