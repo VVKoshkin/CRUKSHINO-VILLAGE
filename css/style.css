@@ -173,6 +173,7 @@ span.headline-price {
     padding: 40px;
     background: rgba(55, 102, 204, 0.5);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
 }
 

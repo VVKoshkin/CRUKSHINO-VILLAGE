@@ -273,8 +273,8 @@ p.todo {
     color: #FFFFFF;
     position: relative;
     z-index: 1;
-    padding-left: 7px;
-    padding-right: 14px;
+    width: 50px;
+    text-align: center;
     mask-image: url(../img/plan-flag.svg);
     mask-repeat: no-repeat;
     mask-position: center right;

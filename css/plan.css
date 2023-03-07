@@ -1,17 +1,251 @@
 .plan-container {
-    max-width: 1540px;
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: #0E0EeE;
-    height: 500px;
-    position: relative;
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 1540px;
+  position: relative;
 }
 
-.plan-element {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(86, 123, 186);
+.plan-percend-sold {
+  position: absolute;
+  top: 0;
+  left: 1085px;
+  background: rgba(6, 180, 54, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 0px 0px 10px 10px;
+  padding: 30px 35px 51px 35px;
+}
+
+.plan-percend-sold>p {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-percend-sold>h4 {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 58px;
+    color: #E9C878;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.plan-container > .mark {
+  position: absolute;
+  cursor: pointer;
+}
+
+.plan-container .mark-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  top: -14px;
+  left: calc(-50% + 14px);
+  transform-origin: top;
+  transform: scaleY(0%);
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+.plan-container .mark-card > h4 {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #06b436;
+  margin-bottom: 15px;
+}
+
+.plan-container .mark-card > .parameters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-container .mark-card > .parameters .pair > .name {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(40, 41, 46, 0.7);
+}
+.plan-container .mark-card > .parameters .pair > .value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #28292e;
+}
+
+/* On hover: delete mask, round borders, expand card */
+
+.plan-container * {
+  transition: transform 0.5s, border-radius 0.3s;
+}
+
+.plan-container > .mark:hover > .plan-mark {
+  mask: none;
+  -webkit-mask: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 9px;
+  line-height: 28px;
+}
+
+.plan-container > .mark:hover > .mark-card {
+  width: auto;
+  height: auto;
+  visibility: visible;
+  transform: scaleY(100%);
+  padding: 34px 20px 20px 30px;
+}
+
+.plan-container > .mark[data-house-num="1"] {
+  top: 567px;
+  left: 102px;
+}
+
+.plan-container > .mark[data-house-num="2"] {
+  top: 567px;
+  left: 278px;
+}
+
+.plan-container > .mark[data-house-num="3"] {
+  top: 567px;
+  left: 417px;
+}
+.plan-container > .mark[data-house-num="4"] {
+  top: 606px;
+  left: 547px;
+}
+.plan-container > .mark[data-house-num="5"] {
+  top: 574px;
+  left: 700px;
+}
+.plan-container > .mark[data-house-num="6"] {
+  top: 607px;
+  left: 837px;
+}
+.plan-container > .mark[data-house-num="7"] {
+  top: 574px;
+  left: 977px;
+}
+.plan-container > .mark[data-house-num="8"] {
+  top: 583px;
+  left: 1117px;
+}
+.plan-container > .mark[data-house-num="9"] {
+  top: 597px;
+  left: 1247px;
+}
+.plan-container > .mark[data-house-num="10"] {
+  top: 587px;
+  left: 1397px;
+}
+.plan-container > .mark[data-house-num="11"] {
+  top: 92px;
+  left: 280px;
+}
+.plan-container > .mark[data-house-num="12"] {
+  top: 172px;
+  left: 280px;
+}
+.plan-container > .mark[data-house-num="13"] {
+  top: 242px;
+  left: 267px;
+}
+.plan-container > .mark[data-house-num="14"] {
+  top: 312px;
+  left: 231px;
+}
+.plan-container > .mark[data-house-num="15"] {
+  top: 400px;
+  left: 200px;
+}
+.plan-container > .mark[data-house-num="16"] {
+  top: 92px;
+  left: 380px;
+}
+.plan-container > .mark[data-house-num="17"] {
+  top: 129px;
+  left: 471px;
+}
+.plan-container > .mark[data-house-num="18"] {
+  top: 172px;
+  left: 455px;
+}
+.plan-container > .mark[data-house-num="19"] {
+  top: 262px;
+  left: 450px;
+}
+.plan-container > .mark[data-house-num="20"] {
+  top: 312px;
+  left: 440px;
+}
+.plan-container > .mark[data-house-num="21"] {
+  top: 402px;
+  left: 410px;
+}
+.plan-container > .mark[data-house-num="22"] {
+  top: 170px;
+  left: 550px;
+}
+.plan-container > .mark[data-house-num="23"] {
+  top: 255px;
+  left: 580px;
+}
+.plan-container > .mark[data-house-num="24"] {
+  top: 331px;
+  left: 560px;
+}
+.plan-container > .mark[data-house-num="25"] {
+  top: 427px;
+  left: 560px;
+}
+.plan-container > .mark[data-house-num="26"] {
+  top: 168px;
+  left: 680px;
+}
+.plan-container > .mark[data-house-num="27"] {
+  top: 207px;
+  left: 770px;
+}
+.plan-container > .mark[data-house-num="28"] {
+  top: 257px;
+  left: 770px;
+}
+.plan-container > .mark[data-house-num="29"] {
+  top: 327px;
+  left: 770px;
+}
+.plan-container > .mark[data-house-num="30"] {
+  top: 417px;
+  left: 770px;
+}
+.plan-container > .mark[data-house-num="31"] {
+  top: 287px;
+  left: 960px;
+}
+.plan-container > .mark[data-house-num="32"] {
+  top: 407px;
+  left: 970px;
+}
+.plan-container > .mark[data-house-num="33"] {
+  top: 315px;
+  left: 1132px;
+}
+.plan-container > .mark[data-house-num="34"] {
+  top: 400px;
+  left: 1150px;
+}
+.plan-container > .mark[data-house-num="35"] {
+  top: 405px;
+  left: 1280px;
 }
