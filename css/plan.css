@@ -52,6 +52,7 @@
   width: 0;
   height: 0;
   padding: 0;
+  z-index: 2;
 }
 
 .plan-container .mark-card > h4 {
@@ -97,10 +98,11 @@
   height: 28px;
   font-size: 9px;
   line-height: 28px;
+  z-index: 3;
 }
 
 .plan-container > .mark:hover > .mark-card {
-  width: auto;
+  width: max-content;
   height: auto;
   visibility: visible;
   transform: scaleY(100%);

@@ -54,7 +54,7 @@
 
 }
 /* Landscape phones and portrait tablets */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     :root {
         --cont-width: 620px;
     }
@@ -135,6 +135,9 @@
 
     .advantages .card.wide {
         grid-column: span 1;
+        flex-direction: column;
+        padding-left: 0;
+        gap: 0;
     } 
 
     
