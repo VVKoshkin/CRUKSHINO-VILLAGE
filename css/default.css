@@ -104,6 +104,12 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 220px;
     box-shadow: 0px 10px 50px rgba(233, 200, 120, 0.5);
+    text-transform: uppercase;
+    color: #6E5A45;
+}
+
+.btn img {
+    padding-right: 25px;
 }
 
 .cards {
@@ -285,8 +291,6 @@ p.todo {
 
 form>input[type="tel"],
 .btn {
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
     letter-spacing: 0.1em;
     width: 370px;
     height: 80px;
