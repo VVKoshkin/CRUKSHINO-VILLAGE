@@ -376,29 +376,48 @@ span.headline-price {
     margin-bottom: 80px;
 }
 
+.territory-cards {
+}
+
 .territory-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
 
+.territory-card img {
+    width: 49.6vw!important;
+    height: 100%;
+    object-fit: cover;
+}
 
-.territory-card .pictures {
+.territory-card--1 {
+    gap: 215px;
+    margin-left: calc(50% - var(--cont-width) / 2);
+}
+
+.territory-card--2 {
+    gap: 115px;
+    margin-right: calc(50% - var(--cont-width) / 2);
+}
+
+
+/* .territory-card .pictures {
     width: 50vw;
     height: auto;
 }
 
-.territory-card .pictures>img {
-    width: 49.6vw;
+.territory-card .pictures img {
+    width: 49.25vw !important;
 }
 
 .territory-card .pictures.right {
-    width: 50vw;
     margin-left: 215px;
-}
+} 
 
-.territory-card .pictures.left {
+ .territory-card .pictures.left {
     margin-right: 115px;
-}
+} */
 
 .houses {
     padding-top: 120px;
@@ -584,9 +603,9 @@ span.headline-price {
     margin-bottom: 155px;
 }
 
-.decoration-option img {
+/* .decoration-option img {
     width: 50vw;
-}
+} */
 
 .decoration-name {
     display: flex;

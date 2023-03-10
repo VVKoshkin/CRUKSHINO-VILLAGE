@@ -214,7 +214,7 @@ a {
 
 }
 
-.slider-btn.inactive::before {
+.slider-btn[aria-disabled="true"]::before {
     position: absolute;
     content: '';
     top: 0;
