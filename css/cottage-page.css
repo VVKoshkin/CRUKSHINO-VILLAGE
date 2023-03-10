@@ -19,6 +19,11 @@ header {
     height: 30px;
 }
 
+.button-back button::after {
+    width: 5px;
+    height: 5px;
+}
+
 .button-back span {
     font-family: 'Museo Sans Cyrl';
     font-style: normal;
@@ -355,7 +360,10 @@ header {
     }
 
     .button-back button {
-        color: #000;
+        border-color: #000;
+    }
+
+    .button-back button::after {
         border-color: #000;
     }
 
@@ -412,7 +420,10 @@ header {
     .cottage-description-heading-feature__element>img {
         width: 22px;
         height: 22px;
-        color: #FFF; /* not works... */
+    }
+
+    .cottage-description-heading-feature__element>img.low-res {
+        display: inline;
     }
 
     .cottage-image {
@@ -440,7 +451,6 @@ header {
     }
     .cottage-plan-floors>button>p {
         color: #000;
-
     }
 
     .cottage-plan-floors>button.active {
@@ -450,6 +460,80 @@ header {
 
     .cottage-plan-floors>button.active>p {
         color: #FFF;
+    }
+
+    .cottage-plan-image>img {
+        width: 100%;
+    }
+
+    .cottage-plan-descriptions {
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .cottage-plan-description {
+        flex-direction: row;
+        max-width: fit-content;
+        text-align: left;
+    }
+
+    .cottage-plan-description>img {
+        width: 50px;
+        height: 50px;        
+    }
+
+    .cottage-plan-description>p {
+        font-size: 15px;
+        line-height: 22px;
+        color: #3766CC;
+        order: 2;
+        flex-grow: 1;
+    }
+
+    .showroom {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .showroom-heading {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .showroom-slides {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .showroom-slides-images {
+        order: -1;
+        width: 100vw;
+    }
+
+    .showroom-slides-images>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .showroom-slides-description {
+        margin: 0 auto;
+        max-width: var(--cont-width);
+    }
+
+    .showroom-slides__headline {
+        text-align: center;
+        font-size: 25px;
+        line-height: 37px;
+        margin-bottom: 25px;
+    }
+
+    .showroom .slider {
+        justify-content: space-between;
+        gap: 0;
     }
     
 }
