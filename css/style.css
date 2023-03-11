@@ -203,7 +203,6 @@ span.headline-price {
     border: 1px solid #F0F0F0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-
 }
 
 .personal-offer>.container {
@@ -376,48 +375,31 @@ span.headline-price {
     margin-bottom: 80px;
 }
 
-.territory-cards {
-}
-
 .territory-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.territory-card img {
-    width: 49.6vw!important;
-    height: 100%;
-    object-fit: cover;
-}
-
-.territory-card--1 {
     gap: 215px;
-    margin-left: calc(50% - var(--cont-width) / 2);
 }
 
-.territory-card--2 {
-    gap: 115px;
-    margin-right: calc(50% - var(--cont-width) / 2);
+.territory-card>.contains-picture-slider>.typeset {
+    max-width: 370px;
 }
 
-
-/* .territory-card .pictures {
-    width: 50vw;
-    height: auto;
+.territory-card>.pictures {
+    flex: .5 1 0;
+    width: 50%;
 }
 
-.territory-card .pictures img {
-    width: 49.25vw !important;
+.territory-card--1>.contains-picture-slider {
+    padding-left: calc(50% - var(--cont-width)/2);
+    padding-right: 0;
 }
 
-.territory-card .pictures.right {
-    margin-left: 215px;
-} 
-
- .territory-card .pictures.left {
-    margin-right: 115px;
-} */
+.territory-card--2>.contains-picture-slider {
+    padding-right: calc(50% - var(--cont-width)/2);
+    padding-left: 0;
+}
 
 .houses {
     padding-top: 120px;
@@ -591,8 +573,19 @@ span.headline-price {
 
 .decoration-option {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 85px;
+}
+
+.decoration-option>.contains-picture-slider {
+    padding-left: calc(50% - var(--cont-width)/2);
+    padding-right: 0;
+}
+
+.decoration-option>.pictures {
+    width: 50%;
+    flex: .5 1 0;
 }
 
 .decoration-option .headline {
@@ -765,7 +758,7 @@ span.headline-price {
 
 .house-pick-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     gap: 30px;
 }
 
@@ -773,10 +766,9 @@ span.headline-price {
     position: relative;
 }
 
-.house-pick-card img {
+.house-pick-card>.pictures {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .house-pick-card-content {

@@ -248,11 +248,7 @@ header {
     width: 270px;
     height: 70px;
     background-color: transparent;
-    border: 2px solid transparent;
-    border-image: linear-gradient(#E9C878, #C1A050);
-    -moz-border-image: -moz-linear-gradient(#E9C878, #C1A050);
-    -webkit-border-image: -webkit-linear-gradient(#E9C878, #C1A050);
-    border-image-slice: 1;
+    border: 2px solid #E9C878;
     border-radius: 35px;
 }
 
@@ -276,23 +272,37 @@ header {
     max-width: 270px;
 }
 
+.showroom .slider>.slider-btn.back {
+    order: 0;
+}
+
 .showroom .slide-dots {
     display: flex;
     align-items: center;
     gap: 6px;
+    order: 1;
 }
 
-.showroom .slide-dot {
+.showroom .slider>.slider-btn.forw {
+    order: 2;
+}
+
+.showroom .slide-dots>li {
     width: 6px;
     height: 6px;
     background-color: #000;
     border-radius: 50%;
 }
 
-.showroom .slide-dot.active {
+.showroom .slide-dots>li.slick-active {
     width: 10px;
     height: 10px;
     background-color: #007AFF;
+
+}
+
+.showroom .slide-dots>li>button {
+    display: none;
 }
 
 .showroom .slider {
@@ -305,10 +315,9 @@ header {
     overflow: hidden;
 }
 
-.showroom-slides-images>img {
+.showroom-slides-images>.pictures {
     width: 955px;
     height: 450px;
-    object-fit: cover;
 }
 
 .showroom-slides-images .filter {
@@ -513,10 +522,9 @@ header {
         width: 100vw;
     }
 
-    .showroom-slides-images>img {
+    .showroom-slides-images>.pictures {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     .showroom-slides-description {
