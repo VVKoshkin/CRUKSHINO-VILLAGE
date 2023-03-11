@@ -55,8 +55,16 @@ $(() => {
         $(images).find(`img[data-floor=${floorNum}]`).show();
     })
 
-    $('form.personal-offer-form>button[type="submit"]').click((e) => {
-        // TODO phone validation here and lower
+    // т.к. везде только телефон, обработка одинаковая
+    $('form').submit((e) => {
+        e.preventDefault();
+        const phoneNum = $(e.target).find('input[name="phone"]').val();
+        const phoneRegexp = /[7|8]-?\d{3}-?\d{3}-?\d{2}-?\d{2}/
+        if (!phoneRegexp.test(phoneNum)) {
+            alert('Формат телефона не соответствует')
+        } else {
+            console.log('Sending...done!')
+        }
     })
 
 
